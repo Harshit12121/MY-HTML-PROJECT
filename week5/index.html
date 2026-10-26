@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Website</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  <style>
-/* Store colours and spacing in variables */
-:root {
-    --primary-color: #2563eb;
-    --background-color: #f1f5f9;
-    --text-color: #333333;
-    --card-color: #ffffff;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
 
-    --spacing-small: 10px;
-    --spacing-medium: 20px;
-    --spacing-large: 30px;
-}
+    <!-- 5.3: Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-/* Use variables with var() */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: var(--spacing-medium);
-}
+    <style>
+        /* 5.4: CSS variables */
+        :root {
+            --primary-color: #2563eb;
+            --background-color: #f1f5f9;
+            --text-color: #333333;
+            --card-color: #ffffff;
+            --spacing-small: 10px;
+            --spacing-medium: 20px;
+            --spacing-large: 30px;
+        }
 
-h1 {
-    color: var(--primary-color);
-}
+        /* 5.2: Universal selector */
+        * {
+            box-sizing: border-box;
+        }
 
-.card {
-    background-color: var(--card-color);
-    padding: var(--spacing-medium);
-    margin-bottom: var(--spacing-large);
-}
+        /* 5.1 and 5.3: Internal CSS and typography */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: var(--spacing-medium);
+            line-height: 1.6;
+        }
 
-p {
-    margin-bottom: var(--spacing-small);
-}
+        /* 5.2: Element selector */
+        h1 {
+            color: var(--primary-color);
+            font-size: 32px;
+        }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-    }
+        h2 {
+            color: var(--primary-color);
+        }
 
-    h1 {
-        color: blue;
-    }
+        p {
+            font-size: 16px;
+            margin-bottom: var(--spacing-small);
+        }
 
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
+        /* 5.2: ID selector */
+        #hero {
+            text-align: center;
+            background-color: lightyellow;
+            padding: var(--spacing-large);
+            margin-bottom: var(--spacing-medium);
+        }
 
-        /* 1. Universal selector */
-    * {
-        box-sizing: border-box;
-    }
-
-    /* 2. Element selector */
-    h1 {
-        color: blue;
-    }
-
-    /* 3. Class selector */
-    .card {
-        background-color: lightblue;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    /* 4. ID selector */
-    #hero {
-        text-align: center;
-        background-color: lightyellow;
-        padding: 20px;
-    }
-</style>
-  </style>
+        /* 5.2: Class selector */
+        .card {
+            background-color: var(--card-color);
+            padding: var(--spacing-medium);
+            border-radius: 10px;
+            margin-bottom: var(--spacing-large);
+        }
+    </style>
 </head>
+
 <body>
-  <div id="hero">
-    <h1>Welcome to My Website</h1>
-    <p>This is my home section.</p>
-</div>
+    <div id="hero">
+        <h1>Welcome to My Website</h1>
+        <p>This is my home section.</p>
+    </div>
 
-<div class="card">
-    <h2>About Me</h2>
-    <p>I am a B.Tech CSE student.</p>
-</div>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a B.Tech CSE student.</p>
+    </div>
 
-<section>
-    <h2>Why I Chose These Colours</h2>
-    <p>I chose blue because it looks professional and creates a sense of trust.</p>
-    <p>I chose a light background because it makes the content easy to read.</p>
-    <p>I used dark text to provide good contrast and improve readability.</p>
-</section>
-  
+    <!-- 5.5: Explain colour choices -->
+    <section class="card">
+        <h2>Why I Chose These Colours</h2>
+        <p>I chose blue because it looks professional and creates a sense of trust.</p>
+        <p>I chose a light background because it makes the content easy to read.</p>
+        <p>I used dark text to provide good contrast and improve readability.</p>
+    </section>
 </body>
-</html>
+</html
