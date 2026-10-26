@@ -4,7 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
   <style>
+/* Store colours and spacing in variables */
+:root {
+    --primary-color: #2563eb;
+    --background-color: #f1f5f9;
+    --text-color: #333333;
+    --card-color: #ffffff;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+}
+
+/* Use variables with var() */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: var(--spacing-medium);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+}
+
+p {
+    margin-bottom: var(--spacing-small);
+}
+
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
