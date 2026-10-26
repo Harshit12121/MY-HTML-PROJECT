@@ -19,10 +19,43 @@
         font-size: 16px;
         line-height: 1.6;
     }
+
+        /* 1. Universal selector */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* 2. Element selector */
+    h1 {
+        color: blue;
+    }
+
+    /* 3. Class selector */
+    .card {
+        background-color: lightblue;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* 4. ID selector */
+    #hero {
+        text-align: center;
+        background-color: lightyellow;
+        padding: 20px;
+    }
 </style>
   </style>
 </head>
 <body>
+  <div id="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This is my home section.</p>
+</div>
+
+<div class="card">
+    <h2>About Me</h2>
+    <p>I am a B.Tech CSE student.</p>
+</div>
   
 </body>
 </html>
