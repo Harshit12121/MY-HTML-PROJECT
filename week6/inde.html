@@ -94,6 +94,30 @@
 .add-button:hover {
   background-color: #1d4ed8;
 }
+
+/* 6.5: Responsive layout */
+.profile-card {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-card {
+    width: 100%;
+  }
+
+  .add-button {
+    right: 16px;
+    bottom: 16px;
+  }
+}
   </style>
 </head>
 
