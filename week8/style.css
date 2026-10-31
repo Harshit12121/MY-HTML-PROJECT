@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 15px;
+}
+
+/* 8.1 and 8.3: Main CSS Grid Layout */
+.dashboard {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: 100px 1fr 70px;
+
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+
+    gap: 15px;
+}
+
+/* Header */
+.head {
+    grid-area: head;
+    background-color: #2563eb;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+.side {
+    grid-area: side;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side p {
+    margin-top: 20px;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 8.2: Responsive Grid */
+.grid-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 8.4: Flexbox Inside Each Card */
+.card {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background-color: #dbeafe;
+    color: #1e3a8a;
+
+    padding: 25px 15px;
+    min-height: 110px;
+
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+/* Footer */
+.foot {
+    grid-area: foot;
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+}
