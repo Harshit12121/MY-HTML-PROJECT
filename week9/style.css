@@ -143,3 +143,19 @@ footer {
         padding: 3rem;
     }
 }
+
+/* 9.1 Mobile First Responsive Layout */
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
